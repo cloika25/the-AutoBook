@@ -12,8 +12,8 @@ async def on_startup(_):
 async def echo_send(message: types.Message):
     try:
         await bot.send_message(message.from_user.id, message.text)
-    except:
-        print('Я хз как получить саму ошибку... но вот Error')
+    except Exception as error:
+        print(str(error))
 
 
 executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
