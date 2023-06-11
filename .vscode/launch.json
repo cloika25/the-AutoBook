@@ -5,7 +5,6 @@
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
-      // Изначально было ${file} то есть запускал файл в котором ты находишься поэтому не запускался
       "program": "main.py",
       "console": "integratedTerminal",
       "justMyCode": true
